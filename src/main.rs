@@ -20,6 +20,7 @@ fn create_waveform(number_of_channels: u16) {
         writer.write_sample((sample * amplitude) as i16).unwrap();
     }
 }
+
 fn main() {
     match ask_for_number_of_wavetables() {
         Some(v) => create_waveform(v),
